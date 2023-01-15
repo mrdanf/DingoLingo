@@ -2,7 +2,7 @@ BOT_TOKEN: str = ""
 SPOTIFY_ID: str = ""
 SPOTIFY_SECRET: str = ""
 
-BOT_PREFIX = "$"
+BOT_PREFIX = "!"
 
 EMBED_COLOR = 0x4dd4d0  #replace after'0x' with desired hex code ex. '#ff0188' >> '0xff0188'
 
@@ -78,7 +78,7 @@ HELP_STOP_LONG = "Stops the AudioPlayer and clears the songqueue"
 HELP_MOVE_LONG = f"{BOT_PREFIX}move [position] [new position]"
 HELP_MOVE_SHORT = 'Moves a track in the queue'
 HELP_YT_SHORT = "Play a supported link or search on youtube"
-HELP_YT_LONG = ("$p [link/video title/key words/playlist-link/soundcloud link/spotify link/bandcamp link/twitter link]")
+HELP_YT_LONG = (f"{BOT_PREFIX}p [link/video title/key words/playlist-link/soundcloud link/spotify link/bandcamp link/twitter link]")
 HELP_PING_SHORT = "Pong"
 HELP_PING_LONG = "Test bot response status"
 HELP_CLEAR_SHORT = "Clear the queue."

@@ -11,7 +11,7 @@ from musicbot.utils import guild_to_audiocontroller, guild_to_settings
 initial_extensions = ['musicbot.commands.music',
                       'musicbot.commands.general', 'musicbot.plugins.button']
 bot = commands.Bot(command_prefix=config.BOT_PREFIX,
-                   pm_help=True, case_insensitive=True)
+                   pm_help=True, case_insensitive=True, intents=discord.Intents.all())
 
 
 if __name__ == '__main__':
@@ -81,4 +81,4 @@ async def register(guild):
                         print(e)
 
 
-bot.run(config.BOT_TOKEN, bot=True, reconnect=True)
+bot.run(config.BOT_TOKEN, reconnect=True)

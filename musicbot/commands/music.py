@@ -136,7 +136,7 @@ class Music(commands.Cog):
             config.MAX_SONG_PRELOAD = 25
 
         embed = discord.Embed(title=":scroll: Queue [{}]".format(
-            len(playlist.playque)), color=config.EMBED_COLOR, inline=False)
+            len(playlist.playque)), color=config.EMBED_COLOR)
 
         for counter, song in enumerate(list(playlist.playque)[:config.MAX_SONG_PRELOAD], start=1):
             if song.info.title is None:
