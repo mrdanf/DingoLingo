@@ -268,6 +268,7 @@ class AudioController(object):
 
     def search_youtube(self, title):
         """Searches youtube for the video title and returns the first results video link"""
+        title = title.replace(":", "")
 
         # if title is already a link
         if linkutils.get_url(title) is not None:
